@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 const publicationSchema = new mongoose.Schema(
     {
-        name: {type: mongoose.Schema.Types.ObjectId, ref: "post"},
+        name: {type: String, required: true},
     },
     {
         timestamps: true,
